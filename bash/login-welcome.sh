@@ -12,15 +12,10 @@
 ###############
 # Variables   #
 ###############
-title="Overlord"
-myname=$USER
-hostname=$(hostname)
+welcome=$(~/COMP2101/bash/welcome-message.sh)
 
 ###############
 # Main        #
 ###############
-cat <<EOF
 
-Welcome to planet $hostname, "$title $myname!"
-It is $(date +"%I:%M %p") on $(date +"%A")
-EOF
+cowsay $welcome
